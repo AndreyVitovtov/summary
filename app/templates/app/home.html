@@ -1,0 +1,74 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block css_file %}
+    <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+{% endblock %}
+
+{% block header %}
+    <div class="block">
+        <div class="header-avatar">
+            <div class="avatar-wrapper"
+                 style="background-image: url({% static 'app/images/' %}{{ avatar.image }}">
+            </div>
+        </div>
+        <div class="header-about">
+            <div class="title">
+                about me
+            </div>
+            <div class="text">
+                {{ about.description }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="personal-info">
+        <div class="name">
+            {{ personal_info.name }} {{ personal_info.surname }}
+        </div>
+        <div class="contact">
+
+        </div>
+    </div>
+    <div class="info">
+        <div class="title">
+            education
+        </div>
+        {% for education in educations %}
+            <div class="education">
+                <div>
+                    <div class="educational_institution">
+                        {{ education.educational_institution }}
+                    </div>
+                    <div class="specialization">
+                        {{ education.specialization }}
+                    </div>
+                </div>
+                <div>
+                    {{ education.start_date }} - {{ education.end_date }}
+                </div>
+            </div>
+        {% endfor %}
+
+        <div class="title">
+            Experience
+        </div>
+        {% for ex in experience %}
+        {% endfor %}
+
+        <div class="title">
+            portfolio
+        </div>
+        {% for p in portfolio %}
+        {% endfor %}
+
+        <div class="title">
+            skills
+        </div>
+        {% for skill in skills %}
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,93 @@
+.block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.block > div:nth-child(1) {
+    width: 20%;
+}
+
+.block > div:nth-child(2) {
+    width: 80%;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #F8F8FA;
+    border-bottom: solid 2px #F8F8FA;
+    margin-bottom: 20px;
+}
+
+.text {
+    color: #F8F8FA;
+    text-align: justify;
+}
+
+header {
+    background-color: #1D3D70;
+    min-height: 200px;
+    height: auto;
+    padding: 0 40px;
+}
+
+.header-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.avatar-wrapper {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    align-items: start;
+}
+
+main > div:nth-child(1) {
+    width: 20%;
+    padding-left: 20px;
+    padding-top: 20px;
+    min-height: 50vh; /* TODO: Test */
+    background-color: #F1F2F4;
+}
+
+main > div:nth-child(2) {
+    width: 80%;
+    padding: 20px;
+}
+
+main .title {
+    color: #1D3D70;
+    border-color: #1D3D70;
+}
+
+.personal-info .name {
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D3D70;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.education {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.educational_institution {
+    font-weight: bold;
+    font-size: 18px;
+}
